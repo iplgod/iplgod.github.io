@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GodPage - IPLGod.com</title>
+  <link rel="stylesheet" href="godpage.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="logo">
+    <a href="index.html"><img src="imgs/pnglogo.png" alt="logo" /></a>
+  </div>
+  
+  <div class="start">
+    <h1>Match Prediction</h1>
+  </div>
+  <!-- Update today's match here -->
+  <div class="today">
+    <p class="head">IPL GOD - Indian T20 League</p>
+    <p class="brain">Hyderabad vs Rajasthan</p>
+  </div>
+
+  <!-- Prediction Section -->
+  <div class="container">
+    <h1>Who Will Win?</h1>
+    <button id="getPrediction">Get Prediction</button>
+    <div id="timer" style="display: none;">
+      Calculating... <span id="countdown">12</span>s
+    </div>
+    <div id="result" style="display: none;">
+      <p>Result: <span id="predictionResult"></span></p>
+      <button id="whyButton">Why?</button>
+    </div>
+    <div id="analysis" style="display: none;">
+      <h2>Detailed Analysis</h2>
+      <p id="analysisText"></p>
+    </div>
+  </div>
+
+<!-- update upcoming match here -->
+  <div class="upcoming">
+    <p class="head">IPL GOD - Upcoming Matches</p>
+    <p class="brain">Chennai vs Mumbai</p>    <p class="result">Prediction coming soon</p>
+  </div>
+
+  <script src="godpage.js"></script>
+</body>
+</html>

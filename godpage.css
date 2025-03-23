@@ -1,0 +1,99 @@
+/* Color code - #1A1653 , #F59D29 */
+body {
+    background-color: #1A1653;
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+  
+  /* Logo Section */
+  .logo a{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    height: 15vh;
+    padding: 10px;
+    background-color: rgb(198, 69, 69);
+  }
+  .logo img {
+    height: auto;
+    width: auto; 
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  /* Header */
+  .start h1 {
+    color: white;
+    text-align: center;
+    font-size: 45px;
+  }
+  
+  /* Match Info Section */
+  .today {
+    text-align: center;
+  }
+  .today .head {
+    font-size: 20px;
+  }
+  .today .result {
+    font-size: 18px;
+    animation: blink 2s infinite;
+  }
+  .upcoming {
+    margin-top: 20%;
+    margin-bottom: 20%;
+    text-align: center;
+  }
+  .upcoming .head {
+    font-size: 20px;
+  }
+  .upcoming .result {
+    font-size: 18px;
+    animation: blink 2s infinite;
+  }
+  /* Animation for Blinking */
+  @keyframes blink {
+    0% { color: #F59D29; }
+    50% { color: white; }
+    100% { color: #1A1653; }
+  }
+  
+  /* Prediction Section */
+  button {
+    align-items: center;
+    justify-content: center;
+    background-color: #F59D29;
+    color: #1A1653;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  button:hover {
+    background-color: #ffac40;
+  }
+  
+  #result, #analysis, #timer {
+    margin-top: 20px;
+  }
+  
+  #timer {
+    font-size: 20px;
+  }
+  /* Center the button and results */
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /* Center the timer and result messages */
+    #timer, #result, #analysis {
+        text-align: center;
+        margin-top: 20px;
+    }
+  
